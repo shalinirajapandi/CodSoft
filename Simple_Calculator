@@ -1,0 +1,80 @@
+TASK1: A SIMPLE CALCULATOR 
+PROGRAM:
+--------------------------------------------------------------------------
+while True:
+    print("Welcome !")
+    print("Enter two numbers to perform operation one by one :")
+    print("Enter the choice you need to perform with these numbers !")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Modulus")
+    print("6. Exit")
+    c=int(input("Enter your Choice : "))
+    if c==6:
+        print("Exiting...")
+        break
+    a=int(input("Enter A : "))
+    b=int(input("Enter B : "))
+    if c==1:
+        print("Addition of two numbers is ",a+b)
+    elif c==2:
+        print("Subtraction of two numbers is ",a-b)   
+    elif c==3:
+        print("Multiplication of two numbers is ",a*b)
+    elif c==4:
+        print("Division of two numbers is ",a//b)
+    elif c==5:
+        print("Modulus of two numbers is ",a%b)
+    else:
+        print("Invalid Choice continue from begining...")
+    print("Here we go Again...\n\n")
+
+-------------------------------------------------------------------
+
+OUTPUT:
+
+Welcome !
+Enter two numbers to perform operation one by one :
+Enter the choice you need to perform with these numbers !
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Modulus
+6. Exit
+Enter your Choice : 1
+Enter A : 23
+Enter B : 45
+Addition of two numbers is  68
+Here we go Again...
+
+Welcome !
+Enter two numbers to perform operation one by one :
+Enter the choice you need to perform with these numbers !
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Modulus
+6. Exit
+Enter your Choice : 3
+Enter A : 89
+Enter B : 23
+Multiplication of two numbers is  2047
+Here we go Again...
+
+Welcome !
+Enter two numbers to perform operation one by one :
+Enter the choice you need to perform with these numbers !
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Modulus
+6. Exit
+Enter your Choice : 6
+Exiting...
+
+=== Code Execution Successful ===
