@@ -1,0 +1,105 @@
+TASK3: CONTACT BOOK
+PROGRAM:
+
+--------------------------------------------------------------------------------
+
+l=[]
+while True:
+    print("Welcome  !")
+    print("Enter the choice you need to perform with this Application !")
+    print("1. Add Contact")
+    print("2. View Contact List")
+    print("3. Search Contact")
+    print("4. Update Contact Details")
+    print("5. Delete Contact Details")
+    print("6. Exit")
+    c=int(input("Enter your Choice : "))
+    if c==6:
+        print("Exiting...")
+        break
+    if c==1:
+        d={}
+        print("Enter the Contact details as per asked ")
+        d[1]=input("Enter Your Name : ")
+        d[2]=input("Enter Phone Number : ")
+        d[3]=input("Enter Email ID : ")
+        d[4]=input("Enter your adress in single line : ")
+        l.append(d)
+        print("Data Added Successfully...")
+    elif c==2:
+        for i in l:
+            print("User name : ",i[1], " Phone Number : ",i[2]," Email ID : ",i[3]," Address : ",i[4])
+    elif c==3:
+        a=input("Enter search word 'Name or Number' : ")
+        for i in l:
+            if i[1]==a:
+                print("User name : ",i[1], " Phone Number : ",i[2]," Email ID : ",i[3]," Address : ",i[4])
+            elif i[2]==a:
+                print("User name : ",i[1], " Phone Number : ",i[2]," Email ID : ",i[3]," Address : ",i[4])
+    elif c==4:
+        print("Enter Phone Number Whose data need to be updated : ")
+        a=input("Enter Number : ")
+        for i in range(len(l)):
+            if l[i][2]==a:
+                l[i][1]=input("Enter Your Name : ")
+                l[i][2]=input("Enter Phone Number : ")
+                l[i][3]=input("Enter Email ID : ")
+                l[i][4]=input("Enter your adress in single line : ")
+        print("Updated Successfully...")
+    elif c==5:
+        a=input("Enter Phone Number of whose detail need to be deleted : ")
+        for i in l:
+            if i[2]==a:
+                l.remove(i)
+                break
+        print("Data Removed Successfully...")
+    else:
+        print("Invalid Choice continue from begining...")
+    print("Here we go Again...\n\n")
+
+----------------------------------------------------------------------------------------
+
+OUTPUT:
+Welcome  !
+Enter the choice you need to perform with this Application !
+1. Add Contact
+2. View Contact List
+3. Search Contact
+4. Update Contact Details
+5. Delete Contact Details
+6. Exit
+enter your choice:1
+Enter the Contact details as per asked 
+Enter Your Name : hema
+Enter Phone Number : 7897896789
+Enter Email ID : ghs@gmail.com
+Enter your adress in single line : gheeth
+Data Added Successfully...
+Here we go Again...
+
+
+Welcome  !
+Enter the choice you need to perform with this Application !
+1. Add Contact
+2. View Contact List
+3. Search Contact
+4. Update Contact Details
+5. Delete Contact Details
+6. Exit
+enter your choice:2
+User name :  hema  Phone Number :  7897896789  Email ID :  ghs@gmail.com  Address :  gheeth
+Here we go Again...
+
+
+Welcome  !
+Enter the choice you need to perform with this Application !
+1. Add Contact
+2. View Contact List
+3. Search Contact
+4. Update Contact Details
+5. Delete Contact Details
+6. Exit
+enter your choice:6
+Exiting...
+
+=== Code Execution Successful ===
